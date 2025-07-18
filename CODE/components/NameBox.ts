@@ -1,22 +1,22 @@
 export default function NameBox(
-    name = ''
+    name: string
     )
 {
-    let parts = ( name || 'Felipe Martins' ).trim().split(/\s+/);
-    let firstName =
+    const parts = ( name || 'Felipe Martins' ).trim().split(/\s+/);
+    const firstName =
         parts[ 0 ]
         ? parts[ 0 ].charAt( 0 ).toUpperCase() + parts[ 0 ].slice( 1 ).toLowerCase()
         : '';
-    let lastName =
+    const lastName =
         parts.length > 1
         ? parts[ parts.length - 1 ].toUpperCase()
         : '';
 
-    let fullName = `${ firstName } ${ lastName }`.trim();
+    const fullName = `${ firstName } ${ lastName }`.trim();
 
     return (
         `
-            <td style="width: 250px; padding: 20px 30px; background-color: #f0f0f0; vertical-align: middle;">
+            <td style="min-width: 250px; height: 250px; padding: 20px 30px; background-color: #f0f0f0; vertical-align: middle;">
                 <p style="margin: 0; font-size: 20px; font-weight: bold; color: #000000; letter-spacing: 1px;">
                     ${ fullName }
                 </p>

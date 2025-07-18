@@ -1,7 +1,7 @@
 export default function MediaBox(
-    position,
-    email,
-    phone
+    position: string,
+    email: string,
+    phone: string
     )
 {
     position = position || 'Director';
@@ -10,8 +10,8 @@ export default function MediaBox(
 
     return (
         `
-            <td style="width: 250px; padding: 20px 30px; background-color: #212121; color: #ffffff; vertical-align: top;">
-                <img src="https://i.ibb.co/ZKYbydC/BAMHUB-MEDIA-Color.png" alt="BAMHUB Media Logo" width="160" style="display: block; margin-bottom: 20px;">
+            <td style="min-width: 250px; height: 250px; padding: 20px 30px; background-color: #212121; color: #ffffff; vertical-align: top;">
+                <img src="https://i.ibb.co/ZKYbydC/BAMHUB-MEDIA-Color.png" alt="BAMHUB Media Logo" width="100" style="display: block; margin-bottom: 20px;">
                 <p style="margin: 0 0 15px 0; font-size: 14px; font-weight: bold;">
                     ${ position }
                 </p>
@@ -22,7 +22,7 @@ export default function MediaBox(
                             <img src="https://i.ibb.co/mS7JpT5/icon-web-white.png" alt="email icon" width="14" height="14">
                         </td>
                         <td style="vertical-align: middle;">
-                            a href="mailto:${ email }">${ email }</a>
+                            <a href="mailto:${ email }">${ email }</a>
                         </td>
                     </tr>
                     <tr>
