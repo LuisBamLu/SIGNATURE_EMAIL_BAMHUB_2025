@@ -10,7 +10,7 @@ export default function EmbassySignature(
     ) : string
 {
     return Layout(
-        'BAMHUB Business Embassy Signature',
+        'BAMHUB Business Home & Business Embassy Signature',
         [
             NameBox( name ),
             HomeBox( position, email, phone ),
