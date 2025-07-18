@@ -20,7 +20,7 @@ export function Layout(
                     </style>
                 </head>
                 <body>
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: ${ width }; font-family: Arial, sans-serif; font-size: 12px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: ${ width }; height: 250px; font-family: Arial, sans-serif; font-size: 12px;">
                         <tr>
                         ${ boxes }
                         </tr>
